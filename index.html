@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 
@@ -37,7 +39,7 @@
                 <p>Conteúdos de primeira mão para quem não tem tantas oportunidades</p>
             </div>
 
-            <a href="#form" class="btnForm">
+            <a href="" class="btnForm">
                 QUERO RECEBER!
                 <img src="https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Ficons%2Farrow-right-bg-purple.svg&w=64&q=100" alt="Vetor Gráfico" class="img">
             </a>
@@ -55,8 +57,8 @@
                 </div>
 
                 <form id="form" name="form">
-                    <label for="name" class="sr-only">Seu Nome e Sobrenome</label>
-                    <input type="text" class="name" id="name" name="name" placeholder="Nome e Sobrenome" required>
+                    <label for="name" class="sr-only">Seu Nome</label>
+                    <input type="text" class="name" id="name" name="name" placeholder="Nome" required>
         
                     <label for="email" class="sr-only">Seu email</label>
                     <input type="email" class="email" id="email" name="email" placeholder="Seu email" required>
@@ -71,6 +73,24 @@
                         </button>
                         
                 </form>
+
+            </div>
+
+            <div class="login">
+
+                <div id="g_id_onload"
+                data-client_id="384250235525-mdqbtbonug0k5uo7gcc3qf6mubp2ems6.apps.googleusercontent.com"
+                data-login_uri="https://programador-master.github.io/Education-with-Technology"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                data-type="standard"
+                data-size="large"
+                data-theme="outline"
+                data-text="sign_in_with"
+                data-shape="rectangular"
+                data-logo_alignment="left">
+            </div>
 
             </div>
 
