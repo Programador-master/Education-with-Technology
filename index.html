@@ -79,24 +79,32 @@
             <div class="login">
 
                 <script>
-                function handleCredentialResponse(response) {
-                  console.log("Encoded JWT ID token: " + response.credential);
-                }
-                window.onload = function () {
-                  google.accounts.id.initialize({
-                    client_id: "384250235525-mdqbtbonug0k5uo7gcc3qf6mubp2ems6.apps.googleusercontent.com",
-                    callback: handleCredentialResponse
-                  });
-                  google.accounts.id.renderButton(
-                    document.getElementById("buttonDiv"),
-                    { theme: "outline", size: "large" }  // customization attributes
-                  );
-                  google.accounts.id.prompt(); // also display the One Tap dialog
-                }
-            </script>
-                
-            <div id="buttonDiv"></div>
-            </div>
+                    function handleCredentialResponse(response) {
+                      console.log("Encoded JWT ID token: " + response.credential);
+                    }
+                    window.onload = function () {
+                      google.accounts.id.initialize({
+                        client_id: "384250235525-mdqbtbonug0k5uo7gcc3qf6mubp2ems6.apps.googleusercontent.com",
+                        callback: handleCredentialResponse,
+                        context:"use",
+                        ux_mode:"popup",
+                        login_uri:"",
+                        auto_select:"true"
+                      });
+                      google.accounts.id.renderButton(
+                        document.getElementById("buttonDiv"),
+                        { theme: "filled_black",
+                         size: "large",
+                         shape:"pill",
+                         text:"$ {button.text}",
+                         logo_alignment:"left" }  // customization attributes
+                      );
+                      google.accounts.id.prompt(); // also display the One Tap dialog
+                    }
+                </script>
+                    
+                <div id="buttonDiv"></div>
+                <div id="gitHub">Api GitHub</div>
 
             </div>
 
