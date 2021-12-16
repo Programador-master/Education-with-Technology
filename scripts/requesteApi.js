@@ -11,7 +11,8 @@ window.onload = function () {
     callback: handleCredentialResponse,
     context:"use",
     ux_mode:"popup",
-    auto_select:"true"
+    auto_select:"true",
+    login_uri:"https://programador-master.github.io/Education-with-Technology/",
   });
   google.accounts.id.renderButton(
     document.getElementById("buttonDiv"),
