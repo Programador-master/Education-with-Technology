@@ -9,10 +9,6 @@ window.onload = function () {
   google.accounts.id.initialize({
     client_id: "384250235525-mdqbtbonug0k5uo7gcc3qf6mubp2ems6.apps.googleusercontent.com",
     callback: handleCredentialResponse,
-    context:"use",
-    ux_mode:"popup",
-    auto_select:"true",
-    login_uri:"https://programador-master.github.io/Education-with-Technology/",
   });
   google.accounts.id.renderButton(
     document.getElementById("buttonDiv"),
@@ -30,7 +26,7 @@ function profileInfos(name, email) {
     const inpName = document.querySelector("input.name")
     const inpEmail = document.querySelector("input.email")
 
-    inpName.innerHTML = name
+    inpName.textContent = name
     inpEmail.innerHTML = email
 
 }
