@@ -11,7 +11,6 @@ window.onload = function () {
     callback: handleCredentialResponse,
     context:"use",
     ux_mode:"popup",
-    login_uri:"",
     auto_select:"true"
   });
   google.accounts.id.renderButton(
