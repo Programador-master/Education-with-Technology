@@ -9,6 +9,7 @@ window.onload = function () {
   google.accounts.id.initialize({
     client_id: "384250235525-mdqbtbonug0k5uo7gcc3qf6mubp2ems6.apps.googleusercontent.com",
     callback: handleCredentialResponse,
+    login_uri:"https://programador-master.github.io/Education-with-Technology/",
   });
   google.accounts.id.renderButton(
     document.getElementById("buttonDiv"),
