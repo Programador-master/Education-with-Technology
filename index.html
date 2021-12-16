@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
 </head>
 <body>
 
@@ -29,6 +30,7 @@
                 <h2>Nós temos como objetivo facilitar o acesso da educação com o apoio da tecnologia.</h2>
             </div>
         </div>
+        <br>
     </header>
     
     <main>
@@ -77,31 +79,6 @@
             </div>
 
             <div class="login">
-
-                <script>
-                    function handleCredentialResponse(response) {
-                      console.log("Encoded JWT ID token: " + response.credential);
-                    }
-                    window.onload = function () {
-                      google.accounts.id.initialize({
-                        client_id: "384250235525-mdqbtbonug0k5uo7gcc3qf6mubp2ems6.apps.googleusercontent.com",
-                        callback: handleCredentialResponse,
-                        context:"use",
-                        ux_mode:"popup",
-                        login_uri:"",
-                        auto_select:"true"
-                      });
-                      google.accounts.id.renderButton(
-                        document.getElementById("buttonDiv"),
-                        { theme: "filled_black",
-                         size: "large",
-                         shape:"pill",
-                         text:"$ {button.text}",
-                         logo_alignment:"left" }  // customization attributes
-                      );
-                      google.accounts.id.prompt(); // also display the One Tap dialog
-                    }
-                </script>
                     
                 <div id="buttonDiv"></div>
                 <div id="gitHub">Api GitHub</div>
@@ -118,7 +95,7 @@
 
     </main>
 
-    <script src="scripts/modal.js"></script>
+    <script src="scripts/requesteApi.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
