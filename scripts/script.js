@@ -1,7 +1,6 @@
 var form = document.querySelector('main section.form')
 
-
-const btnForm = document.querySelector('.btnForm')
+const btnForm = document.querySelector('a.btnForm')
 const imgForm = document.querySelector('main section.content img.img')
 var form = document.querySelector('main section.form')
 
@@ -26,7 +25,7 @@ console.log(answerTrue)
 inpQuestion.innerHTML = question
 
 
-const btnSubmit = document.querySelector('form .btnSubmit')
+const btnSubmit = document.querySelector('form button.btnSubmit')
 
 btnSubmit.
 addEventListener("click", event => {
@@ -40,18 +39,6 @@ addEventListener("click", event => {
     }else {
         const email = document.querySelector('form #email').value
 
-        toggleDispay("Aguarde, você esta sendo redirecionado.")
-
     }
 
 })
-
-function toggleDispay(mensage) {
-
-        const warning = document.querySelector('div.warning')
-        const msm = document.querySelector('p.text')
-
-        warning.classList.toggle('active')
-        msm.innerHTML = mensage
-
-}
