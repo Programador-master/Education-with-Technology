@@ -20,7 +20,6 @@ const number2 = parseInt(Math.random() *9)
 
 const question = `${number1} + ${number2} =`
 const answerTrue = number1 + number2
-console.log(answerTrue)
 
 inpQuestion.innerHTML = question
 
