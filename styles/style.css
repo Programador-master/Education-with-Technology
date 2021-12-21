@@ -273,6 +273,7 @@ main section div.login div#login_gitHub {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     background-color: #323238;
 
@@ -375,8 +376,22 @@ main section div.login div#login_gitHub button {
     }
 
     main section div.login div#login_gitHub {
-        width: 15rem;
+        width: 20rem;
+        max-width: 20rem;
+
+        gap: 2rem;
+
+        padding: 1.5rem 1rem;
     
+    }
+
+    main section div.login div#login_gitHub img{
+        margin: 0 auto;
+    
+    }
+
+    main section div.login div#login_gitHub button img{
+        width: 3rem;
     }
     
 }
